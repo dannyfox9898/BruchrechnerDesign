@@ -2,8 +2,10 @@
 Author: <br />Goca Andelkovic<br />
 LBS Eibiswald | 2aAPC | Gruppe A |  29.09.2025
 
+___
+
 ## 8-Golden-Regeln für Schnittstellen-Design
-**Strebe nach Konsistenz** - Alle Schaltflächen sind gleich gestaltet (mit Ausnahme der Schaltfläche „Gleich“, damit sie leichter gefunden werden kann).<br />
+**Strebe nach Konsistenz** - Alle Schaltflächen sind gleich gestaltet.<br />
 <br />**Strebe nach universeller Bedienbarkeit** - Der Rechner kann sowohl mit der Tastatur als auch mit der Maus verwendet werden, indem man die richtigen Tasten auswählt.<br />
 <br />**Biete informatives Feedback an** - Die Textfelder werden mit der entsprechenden Zahl ausgefüllt, die eingegeben wird.<br />
 <br />**Gestalte Dialoge so, dass sie zu einem Abschluss führen** - Die Schaltfläche „Gleich“ liefert das Endergebnis.<br />
@@ -12,6 +14,7 @@ LBS Eibiswald | 2aAPC | Gruppe A |  29.09.2025
 <br />**Gib dem Nutzer das Gefühl der Kontrolle** - Das Programm tut nichts, es sei denn, der Benutzer gibt direkt etwas ein oder drückt eine Taste.<br />
 <br />**Reduziere die Belastung des Kurzzeitgedächtnisses** - Die Felder zeigen, was der Benutzer eingegeben hat, sodass man sich nichts merken muss.<br />
 
+___
 
 ## 10 Prinzipien für Interaktions-Design
 **Sichtbarkeit des Systemstatus** - Die Felder und Schaltflächen geben dem Benutzer Kontext.<br />
@@ -23,11 +26,15 @@ LBS Eibiswald | 2aAPC | Gruppe A |  29.09.2025
 <br />**Flexibilität und Effizienz** - Das Programm ermöglicht die Eingabe sowohl mit der Tastatur als auch mit der Maus.<br />
 <br />**Minimalistisches Design** - Das Design enthält nur wesentliche Elemente.<br />
 <br />**Fehler erkennen, verstehen und beheben** - Die Idee ist, dass die fertige Version Popup-Nachrichten enthält, die den Benutzer informieren, wenn etwas schiefgelaufen ist.<br />
-<br />**Hilfe und Dokumentation** - In der fertigen Version könnte der Rechner mit einer einfachen Textdatei geliefert werden, die die Funktionsweise des Programms erklärt.<br />
+<br />**Hilfe und Dokumentation** - In der fertigen Version könnte der Rechner mit einer einfachen Textdatei mitgeliefert werden, die die Funktionsweise des Programms erklärt.<br />
+___
+
 ### Verwendung
 Technologien im Einsatz:<br />
 - **Java**
 - **UI Designer (Java Swing)**
+
+___
 
 ### Screenshots
 ![alt text](https://github.com/dannyfox9898/BruchrechnerDesign/blob/main/src/br.png)
