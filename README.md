@@ -30,4 +30,4 @@ Technologien im Einsatz:<br />
 - **UI Designer (Java Swing)**
 
 ### Screenshots
-![alt text](https://github.com/dannyfox9898/Kontoverwaltung-JAVA/blob/main/images/gui1.png)
+![alt text](https://github.com/dannyfox9898/BruchrechnerDesign/blob/main/src/br.png)
