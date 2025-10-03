@@ -1,8 +1,9 @@
-# BruchrechnerDesign
+# Bruchrechner
 Author: <br />Goca Andelkovic<br />
-LBS Eibiswald | 2aAPC | Gruppe A |  29.09.2025
+LBS Eibiswald | 2aAPC | Gruppe A |  29.09.2025 - 03.10.2025
 
 ___
+# BruchrechnerDesign
 
 ## 8-Golden-Regeln für Schnittstellen-Design
 **Strebe nach Konsistenz** - Alle Schaltflächen sind gleich gestaltet.<br />
@@ -29,6 +30,15 @@ ___
 <br />**Hilfe und Dokumentation** - In der fertigen Version könnte der Rechner mit einer einfachen Textdatei mitgeliefert werden, die die Funktionsweise des Programms erklärt.<br />
 ___
 
+# Designumsetzung - Bruchrechner
+
+Hier ist die Implementierung, die ich basierend auf meinem ursprünglichen Entwurf hinzugefügt habe:
+- Zuerst habe ich alle Tasten funktionsfähig gemacht, sodass sie ihr entsprechendes Symbol bzw. ihre entsprechende Zahl eingeben.
+- Ich habe eine Fehlerbehandlung implementiert, die verhindert, dass Benutzer in die Zähler- und Nennerfelder etwas anderes als Zahlen eingeben (einschließlich des Minuszeichens für negative Zahlen).
+- Außerdem habe ich den Code implementiert, der beim Auswählen des Operatorfeldes die Zahlen- und Plus-/Minus-Tasten deaktiviert und ausgraut, sodass der Benutzer keine Nicht-Operatoren in dieses Feld eingeben kann.
+- Ich habe auch die Funktionalität der Gleichheitstaste implementiert, damit die Brüche korrekt berechnet werden.
+- Schließlich habe ich die Klammern- und Komma-Tasten entfernt, da sie sich als zu kompliziert in der Implementierung erwiesen und unnötig erschienen.
+- Ich habe es außerdem so eingerichtet, dass der Benutzer seine Tastatur für den Taschenrechner verwenden kann, und alle unnötigen Tasten wie Buchstaben werden blockiert.
 ### Verwendung
 Technologien im Einsatz:<br />
 - **Java**
