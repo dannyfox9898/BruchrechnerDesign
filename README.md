@@ -47,6 +47,6 @@ Technologien im Einsatz:<br />
 ___
 
 ### Screenshots
-![alt text](https://github.com/dannyfox9898/BruchrechnerDesign/blob/main/src/bru.png)
+![alt text](https://github.com/dannyfox9898/BruchrechnerDesign/blob/main/src/br.png)
 ![alt text](https://github.com/dannyfox9898/BruchrechnerDesign/blob/main/src/bru1.png)
 ![alt text](https://github.com/dannyfox9898/BruchrechnerDesign/blob/main/src/bru2.png)
