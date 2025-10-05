@@ -38,8 +38,7 @@ public class Bruchrechner {
     public Bruchrechner() {
         numberButtons = new JButton[]{oneBtn, twoBtn, threeBtn, fourBtn, fiveBtn, sixBtn, sevenBtn, eightBtn, nineBtn, zeroBtn, plusMinusBtn};
         activeField = numerator1Txt;
-
-        // Add focus listener
+        
         JTextField[] fields = {numerator1Txt, numerator2Txt, denominator1Txt, denominator2Txt, operatorTxt};
         for (JTextField field : fields) {
             field.addFocusListener(new FocusAdapter() {
@@ -51,14 +50,12 @@ public class Bruchrechner {
             });
         }
 
-        // Apply input filters
         setInputFilter(numerator1Txt, true);
         setInputFilter(numerator2Txt, true);
         setInputFilter(denominator1Txt, true);
         setInputFilter(denominator2Txt, true);
         setInputFilter(operatorTxt, false);
 
-        // Number buttons
         oneBtn.addActionListener(e -> appendToActiveField("1"));
         twoBtn.addActionListener(e -> appendToActiveField("2"));
         threeBtn.addActionListener(e -> appendToActiveField("3"));
@@ -71,7 +68,6 @@ public class Bruchrechner {
         zeroBtn.addActionListener(e -> appendToActiveField("0"));
         plusMinusBtn.addActionListener(e -> toggleSign());
 
-        // Operator buttons
         additionBtn.addActionListener(e -> operatorTxt.setText("+"));
         subtractionBtn.addActionListener(e -> operatorTxt.setText("-"));
         multiplicationBtn.addActionListener(e -> operatorTxt.setText("*"));
@@ -83,7 +79,6 @@ public class Bruchrechner {
 
     }
 
-    // Filter for keyboard input
     private void setInputFilter(JTextField field, boolean isNumberField) {
         ((AbstractDocument) field.getDocument()).setDocumentFilter(new DocumentFilter() {
             @Override
@@ -102,21 +97,18 @@ public class Bruchrechner {
 
             @Override
             public void remove(FilterBypass fb, int offset, int length) throws BadLocationException {
-                // Allow all remove operations
                 super.remove(fb, offset, length);
             }
         });
     }
 
     private boolean isValidInput(String text, boolean isNumberField, JTextField field) {
-        if (text.isEmpty()) return true; // allow deletion
+        if (text.isEmpty()) return true;
 
         if (isNumberField) {
-            // Digits and optional minus at start
             return text.matches("-?[0-9]*");
         } else {
-            // Only one operator allowed
-            if (!field.getText().isEmpty()) return false; // block if already has something
+            if (!field.getText().isEmpty()) return false;
             return text.matches("[+\\-*/]");
         }
     }
@@ -183,7 +175,6 @@ public class Bruchrechner {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
 
-        // Set Enter to trigger equals button
         frame.getRootPane().setDefaultButton(br.equalsBtn);
 
         frame.setVisible(true);
